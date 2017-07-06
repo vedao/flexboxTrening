@@ -1,0 +1,134 @@
+/*************************************************
+*
+*	Front-end News! Stylesheet
+*
+*   
+*   Gray (dark)	  #252525
+*   Gray (light)  #b7b7b7
+*   Orange        #f26522
+*
+************************************************/
+
+
+/*----------------------------------------------
+* Base
+-----------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #252525;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {}
+
+a {
+    color: #ff4081;
+    transition: 0.2s ease-in-out;
+}
+
+a:active,
+a:hover,
+a:focus {
+    color: #252525;
+}
+
+
+/*----------------------------------------------
+* Border
+-----------------------------------------------*/
+
+.top-border {
+    background-color: #b7b7b7;
+    display: flex;
+    align-items: flex-start;
+    height: 20px;
+    width: 100%;
+}
+
+.bottom-border {
+    background-color: #b7b7b7;
+    display: flex;
+    align-items: flex-end;
+    height: 20px;
+    width: 100%;
+}
+
+
+/*----------------------------------------------
+* Main
+-----------------------------------------------*/
+
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+
+/*----------------------------------------------
+* Sidebar
+-----------------------------------------------*/
+
+.sidebar {
+    color: #fff;
+    background-color: #252525;
+    display: flex;
+    justify-content: flex-start;
+    width: 224px;
+}
+
+.sidebar-items {
+    display: flex;
+    align-content: stretch;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/*----------------------------------------------
+* Navbar
+-----------------------------------------------*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    color: #252525;
+    background-color: #f26522;
+    height: 40px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+    align-self: center;
+    margin: 10px;
+    padding: 10px;
+}
