@@ -45,14 +45,14 @@ ul {
 p {}
 
 a {
-    color: #ff4081;
+    color: #fff;
     transition: 0.2s ease-in-out;
 }
 
 a:active,
 a:hover,
 a:focus {
-    color: #252525;
+    color: red;
 }
 
 
