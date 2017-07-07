@@ -52,7 +52,7 @@ a {
 a:active,
 a:hover,
 a:focus {
-    color: red;
+    color: #f26522;
 }
 
 
@@ -103,8 +103,13 @@ a:focus {
 .sidebar-items {
     display: flex;
     align-content: stretch;
-    margin: 10px;
-    padding: 10px;
+    padding: 8px 136px 8px 10px;
+}
+
+.sidebar-items a:active,
+.sidebar-items a:hover,
+.sidebar-items a:focus {
+    background-color: #b7b7b7;
 }
 
 
@@ -129,6 +134,12 @@ a:focus {
 .nav-items {
     display: flex;
     align-self: center;
-    margin: 10px;
-    padding: 10px;
+    padding: 8px 20px;
+}
+
+.nav-items a:active,
+.nav-items a:hover,
+.nav-items a:focus {
+    background-color: #252525;
+    padding: 8px 10px;
 }
