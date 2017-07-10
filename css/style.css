@@ -9,6 +9,9 @@
 *
 ************************************************/
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,500,700,300,200,900|Source+Sans+Pro:400,300,600,700,900);
 
 /*----------------------------------------------
 * Base
@@ -84,7 +87,6 @@ a:focus {
 .main-container {
     display: flex;
     justify-content: flex-start;
-    align-content: stretch;
 }
 
 
@@ -92,11 +94,10 @@ a:focus {
 * Sidebar
 -----------------------------------------------*/
 
-.sidebar {
+.sidebar-content {
     color: #fff;
     background-color: #252525;
-    display: flex;
-    justify-content: flex-start;
+    flex: 1 0 200px;
     width: 224px;
 }
 
@@ -121,6 +122,8 @@ a:focus {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    order: 3;
+    z-index: 1000;
     width: 100%;
     color: #252525;
     background-color: #f26522;
@@ -142,4 +145,66 @@ a:focus {
 .nav-items a:focus {
     background-color: #252525;
     padding: 8px 10px;
+}
+
+
+/*----------------------------------------------
+* Info
+-----------------------------------------------*/
+
+.info {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    order: 2;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #252525;
+}
+
+.info-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.side {
+    flex: 1 0 200px;
+    width: 224px;
+    background: #333;
+    padding: 20px;
+    height: 500px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.side ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: #555 solid 1px;
+    color: #eee;
+    -webkit-font-smoothing: antialiased;
+}
+
+.side ul li {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.side>ul>li {
+    font-weight: 600;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.side>ul>li>ul {
+    font-weight: normal;
+    margin-left: 0;
+    padding-left: 0;
+    text-transform: normal;
 }

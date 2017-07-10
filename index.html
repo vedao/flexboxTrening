@@ -5,35 +5,50 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="top-border"></div>
     <div class="main-container">
-        <sidebar class="sidebar">
+        <div class="side" id="side">
             <ul>
-                <li class="sidebar-items"><a href="#">item-1</a></li>
-                <li class="sidebar-items"><a href="#">item-2</a></li>
-                <li class="sidebar-items"><a href="#">item-3</a></li>
-                <li class="sidebar-items"><a href="#">item-4</a></li>
-                <li class="sidebar-items"><a href="#">item-5</a></li>
-                <li class="sidebar-items"><a href="#">item-6</a></li>
-                <li class="sidebar-items"><a href="#">item-7</a></li>
-                <li class="sidebar-items"><a href="#">item-8</a></li>
-                <li class="sidebar-items"><a href="#">item-9</a></li>
-                <li class="sidebar-items"><a href="#">item-10</a></li>
-                <li class="sidebar-items"><a href="#">item-11</a></li>
-                <li class="sidebar-items"><a href="#">item-12</a></li>
-                <li class="sidebar-items"><a href="#">item-13</a></li>
-                <li class="sidebar-items"><a href="#">item-14</a></li>
-                <li class="sidebar-items"><a href="#">item-15</a></li>
-                <li class="sidebar-items"><a href="#">item-16</a></li>
-                <li class="sidebar-items"><a href="#">item-17</a></li>
-                <li class="sidebar-items"><a href="#">item-18</a></li>
-                <li class="sidebar-items"><a href="#">item-19</a></li>
+                <li>Title of list
+                    <ul>
+                        <li>Item one</li>
+                        <li>Item two</li>
+                    </ul>
+                </li>
+                <li>Title of list
+                    <ul>
+                        <li>Item one</li>
+                        <li>Item two</li>
+                        <li>Item Three</li>
+                        <li>Item four</li>
+                    </ul>
+                </li>
+                <li>Title of list
+                    <ul>
+                        <li>Item one</li>
+                        <li>Item two</li>
+                        <li>Item Three</li>
+                        <li>Item four</li>
+                        <li>Item two</li>
+                        <li>Item Three</li>
+                        <li>Item four</li>
+                    </ul>
+                </li>
+                <li>Title of list
+                    <ul>
+                        <li>Item one</li>
+                        <li>Item two</li>
+                        <li>Item Three</li>
+                        <li>Item four</li>
+                    </ul>
+                </li>
             </ul>
-        </sidebar>
+        </div>
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-items"><a href="#">item-1</a></li>
@@ -43,10 +58,35 @@
                 <li class="nav-items"><a href="#">item-5</a></li>
                 <li class="nav-items"><a href="#">item-6</a></li>
             </ul>
-
         </nav>
+        <div class="info">
+            <div class="top-border"></div>
+            <div class="info-content">
+                <div class="content-1" style="width: 50%; height: auto">
+                    <h3>hkghhndfgdfdfhdfhd</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, et, doloribus? Mollitia aut provident at ea, consequuntur commodi maiores harum quos sint incidunt adipisci nesciunt rerum tempore et, corrupti assumenda!</p>
+                </div>
+                <div class="content-2" style="width: 50%; height: auto">
+                    <h3>dhdfjfgjghjhkghkgk</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a, animi est saepe. Ut officiis ipsam incidunt sunt natus illo. Maiores voluptas, enim, velit mollitia ab odit ea laudantium dolorem.</p>
+                </div>
+            </div>
+            <div class="bottom-border"></div>
+        </div>
     </div>
     <div class="bottom-border"></div>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+        (function($) {
+            $(window).on("load", function() {
+                $(".side").mCustomScrollbar({
+                    theme: "light-thin"
+                });
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>
