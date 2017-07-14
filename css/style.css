@@ -17,7 +17,10 @@
 * Base
 -----------------------------------------------*/
 
+html,
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     color: #252525;
@@ -25,7 +28,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     display: flex;
-    flex-direction: column;
 }
 
 h1,
@@ -60,34 +62,11 @@ a:focus {
 
 
 /*----------------------------------------------
-* Border
------------------------------------------------*/
-
-.top-border {
-    background-color: #b7b7b7;
-    display: flex;
-    align-items: flex-start;
-    height: 20px;
-    width: 100%;
-}
-
-.bottom-border {
-    background-color: #b7b7b7;
-    display: flex;
-    align-items: flex-end;
-    height: 20px;
-    width: 100%;
-}
-
-
-/*----------------------------------------------
 * Main
 -----------------------------------------------*/
 
 .main-container {
     display: flex;
-    justify-content: flex-start;
-    flex-grow: 1;
 }
 
 
@@ -96,9 +75,8 @@ a:focus {
 -----------------------------------------------*/
 
 .container-1 {
-    display: flex;
     border: solid 4px #000;
-    flex-direction: column;
+    flex: 1;
 }
 
 
@@ -107,70 +85,69 @@ a:focus {
 -----------------------------------------------*/
 
 .container-2 {
-    display: flex;
     border: solid 4px #000;
+    flex: 10;
+    display: flex;
     flex-direction: column;
 }
 
 
 /*----------------------------------------------
-* Sidebar
+* Container-3
+-----------------------------------------------*/
+
+.container-3 {
+    border: solid 4px #000;
+    flex: 1;
+}
+
+
+/*----------------------------------------------
+* Sidebar-Right
+-----------------------------------------------*/
+
+.side-options {
+    color: #b7b7b7;
+}
+
+.option-1 {
+    height: 20%;
+}
+
+.option-2 {
+    height: 20%;
+}
+
+.option-3 {
+    height: 20%;
+}
+
+.option-4 {
+    height: 20%;
+}
+
+
+/*----------------------------------------------
+* Sidebar-Left
 -----------------------------------------------*/
 
 .side {
     background: #333;
-    padding: 20px;
-    max-height: 870px;
-    margin: 0px;
+    height: 100%;
 }
 
 .side ul {
+    padding-left: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
     margin-top: 10px;
     margin-bottom: 20px;
     border-bottom: #555 solid 1px;
     color: #eee;
-    -webkit-font-smoothing: antialiased;
 }
 
 .side ul li {
     margin-top: 2px;
     margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.side>ul>li {
-    font-weight: 600;
-    color: #eee;
-    text-transform: uppercase;
-}
-
-.side>ul>li>ul {
-    font-weight: normal;
-    margin-left: 0;
-    padding-left: 0;
-    text-transform: normal;
-}
-
-.sidebar-content {
-    color: #fff;
-    background-color: #252525;
-    display: flex;
-    width: 100%;
-}
-
-.sidebar-items {
-    display: flex;
-    align-content: stretch;
-    padding: 8px 136px 8px 10px;
-}
-
-.sidebar-items a:active,
-.sidebar-items a:hover,
-.sidebar-items a:focus {
-    background-color: #b7b7b7;
 }
 
 
@@ -179,17 +156,14 @@ a:focus {
 -----------------------------------------------*/
 
 .navbar {
-    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
     color: #252525;
     background-color: #f26522;
-    height: 40px;
 }
 
 .nav-list {
     display: flex;
+    justify-content: flex-end;
 }
 
 .nav-items {
@@ -210,12 +184,22 @@ a:focus {
 -----------------------------------------------*/
 
 .info {
-    display: flex;
-    align-self: flex-end;
-    border: 1px solid #252525;
+    flex-grow: 2;
+    align-content: flex-end;
+    border: 4px solid #252525;
 }
 
 .info-content {
     display: flex;
     justify-content: flex-start;
+}
+
+
+/*----------------------------------------------
+* Main-Box
+-----------------------------------------------*/
+
+.main-box {
+    flex-grow: 8;
+    border: 4px solid #252525;
 }
