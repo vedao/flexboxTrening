@@ -30,6 +30,12 @@ body {
     display: flex;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/bg.png) no-repeat;
+}
+
 h1,
 h2,
 h3,
@@ -75,8 +81,7 @@ a:focus {
 -----------------------------------------------*/
 
 .container-1 {
-    border: solid 4px #000;
-    flex: 1;
+    flex: 2;
 }
 
 
@@ -85,8 +90,7 @@ a:focus {
 -----------------------------------------------*/
 
 .container-2 {
-    border: solid 4px #000;
-    flex: 10;
+    flex: 12;
     display: flex;
     flex-direction: column;
 }
@@ -97,7 +101,6 @@ a:focus {
 -----------------------------------------------*/
 
 .container-3 {
-    border: solid 4px #000;
     flex: 1;
 }
 
@@ -107,6 +110,7 @@ a:focus {
 -----------------------------------------------*/
 
 .side-options {
+    padding-left: 15px;
     color: #b7b7b7;
 }
 
@@ -141,7 +145,6 @@ a:focus {
     list-style: none;
     margin-top: 10px;
     margin-bottom: 20px;
-    border-bottom: #555 solid 1px;
     color: #eee;
 }
 
@@ -184,9 +187,12 @@ a:focus {
 -----------------------------------------------*/
 
 .info {
+    margin: 5px;
+    padding: 15px;
+    background-color: #b7b7b7;
+    border-radius: 5px;
     flex-grow: 2;
     align-content: flex-end;
-    border: 4px solid #252525;
 }
 
 .info-content {
@@ -200,6 +206,9 @@ a:focus {
 -----------------------------------------------*/
 
 .main-box {
+    margin: 5px 5px 0 5px;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 5px;
     flex-grow: 8;
-    border: 4px solid #252525;
 }
